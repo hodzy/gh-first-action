@@ -13,4 +13,8 @@ jobs:
         run: echo "Hello World!"
       - name: Print Goodbye
         run: echo "Done - bye!"
+      - name: Multi line
+        run: |
+          echo "Frist output"
+          echo "Second output"
       
