@@ -1,0 +1,16 @@
+name: First Workflow
+
+# makes sure we can manually trigger this workflow
+on: workflow_dispatch
+
+jobs: 
+  first-job:
+    # to specify the environments we will use (runners)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        # to execute a command in the command line
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run: echo "Done - bye!"
+      
